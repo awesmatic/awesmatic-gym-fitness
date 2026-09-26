@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#171A18" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#EEF0EE" media="(prefers-color-scheme: light)" />
+    <meta
+      name="description"
+      content="Awesmatic — unrivaled training facilities, world-class classes, and coaches who get you to your goals."
+    />
+    <title>Awesmatic | Modern Fitness & Training</title>
+    <script>
+      (function () {
+        var stored = localStorage.getItem("Awesmatic-theme");
+        var prefersDark =
+          window.matchMedia &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches;
+        if (stored === "dark" || (!stored && prefersDark)) {
+          document.documentElement.classList.add("dark");
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
